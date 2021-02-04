@@ -26,13 +26,17 @@ client.once('ready', () => {
 });
 
 client.on('presenceUpdate', (oldMember, newMember) => {
-    if(oldMember.userID === '292733163833131029' && newMember.userID === '292733163833131029' && oldMember.status === 'offline' && newMember.status === 'online'){
-        client.channels.fetch('700812531433996290').then(channel => {
-            channel.send('ooooh hackers', {
-                tts: true
+    let menber = newMember.member;
+    if(menber.id === '29273316383313102'){
+        if(oldMember.status === 'offline' && newMember.status === 'online'){
+            client.channels.fetch('700812531433996290').then(channel => {
+                channel.send('ooooh hackers', {
+                    tts: true
+                });
             });
-        });
+        }
     }
+
 });
 
 client.on('message', message => {
