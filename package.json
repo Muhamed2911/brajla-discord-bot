@@ -1,0 +1,14 @@
+{
+  "name": "brajla",
+  "version": "1.0.0",
+  "description": "Sejo Brajlovic",
+  "main": "brajla.js",
+  "scripts": {
+    "test": "brajla"
+  },
+  "author": "shoopaq",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  }
+}
